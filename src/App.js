@@ -9,6 +9,7 @@ const App = () => {
   const [order, setOrder] = useState({});
   const [errorMessage, setErrorMessage] = useState('');
 
+  const footerStyle = {textAlign:'center'; fontSize: '16px';}
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
 
@@ -80,7 +81,7 @@ const App = () => {
             <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage}/>
           </Route>
         </Switch>
-        <footer>&copy; sevciksam</footer>
+        <footer style={footerStyle}>&copy; sevciksam</footer>
       </div>
     </Router>
   )
