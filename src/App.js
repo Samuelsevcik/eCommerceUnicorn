@@ -9,7 +9,7 @@ const App = () => {
   const [order, setOrder] = useState({});
   const [errorMessage, setErrorMessage] = useState('');
 
-  const footerStyle = {textAlign:'center'; fontSize: '16px';}
+  const footerStyle = {textAlign:'center', fontSize: '16px';}
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
 
