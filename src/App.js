@@ -80,6 +80,7 @@ const App = () => {
             <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage}/>
           </Route>
         </Switch>
+        <footer>&copy; sevciksam</footer>
       </div>
     </Router>
   )
